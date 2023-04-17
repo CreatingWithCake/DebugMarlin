@@ -37,6 +37,13 @@
  */
 #define CONFIGURATION_H_VERSION 02010200
 
+/**
+ * @section custom
+ * Custom switches (to avoid multiplying configurations).
+ * See README.md for details.
+ */
+#define FIRMWARE_BIN elegoo.bin   // Override the firmware binary output filename
+
 //===========================================================================
 //============================= Getting Started =============================
 //===========================================================================
@@ -60,7 +67,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Donald Cake, debug config)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -87,7 +94,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_RAMPS_14_EFB
+  #define MOTHERBOARD BOARD_MKS_ROBIN_NANO_V1_3_F4
 #endif
 
 /**
